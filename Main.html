@@ -1,0 +1,168 @@
+<!-- 这是一个总结页面，它把链接按照列表的形式显示，并提供分类和搜索功能 -->
+
+<!-- 这个页面是用来显示所有的链接,使用无序列表 -->
+<!DOCTYPE html>
+<html lang="cn">
+<!-- 复制同目录下的search.html文件 -->
+<!--搜索框-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search Box 01</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ecf0f1;
+        }
+
+        .container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .search-box {
+            position: relative;
+            background: #2c3e50;
+            height: 40px;
+            border-radius: 40px;
+            padding: 10px;
+        }
+
+        .search-input {
+            position: relative;
+            border: none;
+            background: none;
+            outline: none;
+            color: white;
+            font-size: 22px;
+            line-height: 40px;
+            height: 40px;
+            width: 0px;
+            transition: .5s;
+            padding: 0px 40px 0 0;
+        }
+
+        .search-box:hover .search-input {
+            width: 240px;
+        }
+
+        .search-box:hover .search-btn {
+            background: white;
+        }
+
+        .search-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            text-decoration: none;
+            color: #e74c3c;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #2c3e50;
+            transition: .5s;
+        }
+
+        .search-ico {
+            margin: 12px;
+            width: 16px;
+            height: 16px;
+        }
+
+        /*.container {
+            transform: translate(0px, 0px);
+        }*/
+        .container {
+            /* 将这个div向上移动360px,向右移动470px */
+            transform: translate(440px, -360px);
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" class="search-input">
+            <a href="#" class="search-btn">
+                <div id="search-ico">
+                    <img src="search.ico" height="33" width="3" />
+
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>总结</title>
+    <!-- 使用无序列表 -->
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        a:hover {
+            color: #f00;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>编程总结</h1>
+    <!-- 使用无序列表 -->
+    <ul>
+        <div>
+            <li>
+                <a href=”front_page“>首页</a>
+            </li>
+        </div>
+        <div>
+            <li>
+                <a href=#Search-ico>搜索</a>
+            </li>
+        </div>
+        <div>
+            <li>
+                <a href=#关于>关于</a>
+            </li>
+        </div>
+    </ul>
+    <h2>关于</h2>
+    <p>
+        这只是一个编程教程的记录网站，自用，如有BUG，请发邮件至邮箱hzx18352986312@tom.com，谢谢！
+    </p>
+    <p>
+        我是一个程序员，我喜欢编程，我喜欢学习，成绩中上，无所畏惧[doge]。
+    </p>
+    <p>
+        我的社交账号：
+    </p>
+    <ul>
+        <li>
+            <a href="https://space.bilibili.com/1433776051?spm_id_from=333.788.0.0">哔哩哔哩</a>
+        </li>
+        <li>
+            <a href="https://shequ.codemao.cn/user/16793145">编程猫</a>
+        </li>
+        <li>
+            <p>
+                我的邮箱:hzx18352986312@tom.com
+            </p>
+        </li>
+    </ul>
+</body>
